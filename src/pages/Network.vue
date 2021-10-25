@@ -51,8 +51,12 @@ export default defineComponent({
       let node_color = "#97c2fc";
       if (server.version && server.version.startsWith("PissIRCd")) {
         node_color = "#ecc855";
-      } else if(!server.version) {
+      } else if(!server.version || server.version === "*" || (!server.version.startsWith("UnrealIRCd"))) {
         node_color = "#d3d3d3";
+      }
+      if(!server.description || server.description.startsWith("~")) {
+        offlineServers.push(sid)
+        continue;
       }
       let nodeData = {
         id: server.sid,
@@ -110,8 +114,11 @@ export default defineComponent({
         node.color.background = "#97c2fc";
         if (data.version && data.version.startsWith("PissIRCd")) {
           node.color.background = "#ecc855";
-        } else if(!server.version) {
+        } else if(!data.version || data.version === "*" || (!data.version.startsWith("UnrealIRCd"))) {
           node.color.background = "#d3d3d3";
+        }
+        if(!data.description || data.description.startsWith("~")) {
+          return;
         }
         this.nodes.update(node)
       } else {
