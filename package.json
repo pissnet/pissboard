@@ -1,0 +1,55 @@
+{
+  "name": "pissmap",
+  "version": "0.0.1",
+  "description": "Piss Piss Piss Piss",
+  "productName": "Dashboard of Piss",
+  "author": "Ramiro Bou <bouramiro@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "@vue-leaflet/vue-leaflet": "^0.6.1",
+    "apexcharts": "^3.27.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "d3": "^7.0.0",
+    "jwt-decode": "^3.1.2",
+    "leaflet": "^1.7.1",
+    "quasar": "^2.0.0",
+    "socket.io-client": "^4.1.2",
+    "vis-data": "^7.1.2",
+    "vis-network": "^9.0.4",
+    "vue-apexcharts": "^1.6.1",
+    "vue3-apexcharts": "^1.4.0",
+    "vue3-keypress": "^4.0.1",
+    "vuex": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app": "^3.0.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "eslint-webpack-plugin": "^2.4.0",
+    "workbox-webpack-plugin": "^6.0.0"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
